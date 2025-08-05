@@ -56,7 +56,7 @@
   	],
 	"r2_buckets": [
 		{
-		"binding": "country-flag",
+		"binding": "MY_BUCKET",
 		"bucket_name": "country-flag"
 		}
 	]
