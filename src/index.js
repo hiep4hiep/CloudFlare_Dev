@@ -43,7 +43,7 @@ export default {
 		const match = path.match(/^\/secure\/([A-Z]{2})$/);
 		if (match) {
 			const countryCode = match[1].toLowerCase();
-			const object = await env.MY_BUCKET.get(`${countryCode}.png`);
+			const object = await env.country_flag.get(`${countryCode}.png`);
 			if (!object) return new Response("Not found", { status: 404 });
 
 			return new Response(object.body, {
