@@ -30,7 +30,7 @@ export default {
 				</head>
 				<body>
 					<p>
-						${EMAIL} authenticated at ${TIMESTAMP} from <a href="http://${COUNTRY_LINK}">${COUNTRY}</a>
+						${EMAIL} authenticated at ${TIMESTAMP} from <a href="${COUNTRY_LINK}">${COUNTRY}</a>
 					</p>
 				</body>
 				</html>
@@ -40,7 +40,7 @@ export default {
 			});
 		}
 		// Handle country code paths
-		const match = path.match(/^\/secure\/([a-z]{2})$/);
+		const match = path.match(/^\/secure\/([A-Z]{2})$/);
 		if (match) {
 			const countryCode = match[1].toLowerCase();
 			const object = await env.MY_BUCKET.get(`${countryCode}.png`);
