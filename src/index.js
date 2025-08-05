@@ -30,7 +30,7 @@ export default {
 				</head>
 				<body>
 					<p>
-						${EMAIL} authenticated at ${TIMESTAMP} from <a href="${COUNTRY_LINK}">${COUNTRY}</a>
+						${EMAIL} authenticated at ${TIMESTAMP} from <a href="http://${COUNTRY_LINK}">${COUNTRY}</a>
 					</p>
 				</body>
 				</html>

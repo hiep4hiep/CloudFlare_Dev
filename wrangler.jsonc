@@ -48,6 +48,10 @@
 		{
 		"pattern": "tunnel.thedevguy.work/secure",
 		"zone_name": "thedevguy.work"
+		},
+		{
+		"pattern": "tunnel.thedevguy.work/secure/*",
+		"zone_name": "thedevguy.work"
 		}
   	],
 	"r2_buckets": [
